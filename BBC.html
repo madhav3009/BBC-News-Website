@@ -9,14 +9,14 @@
   width:1300px;
   margin:0 auto;
   height:58px;
-  }
+}
   
   #logo 
   {
    margin-top:8px;
    width:100px;
    height:40px;
-  float:left; 
+   float:left; 
    margin-right:8px;
   }
   body
@@ -30,7 +30,13 @@
     border-left:1px grey solid;
 	height:40px;
 	margin-top:8px;
-	}
+}
+
+     #bar a
+   {
+    color:black;   
+    text-decoration:none;
+   }
   #signIn-img
   {
    width :35px;
@@ -83,7 +89,9 @@
  margin:15px 0 15px 15px;
  float:left; 
  }
- #MM{
+
+ #MM
+ {
  margin:6px 0;
  padding-left:10px;
  }
@@ -94,14 +102,134 @@
   margin-top:15px;
   background-color:#BFB7B5;
  }
-  
+ 
+ #MenuBarContainer
+ {
+ margin:0 auto;
+ background-color:#bb1919;
+ width:100%;
+ height:40px;
+ 
+ }
+ #MenuBar
+ {
+  margin:0 auto;
+ }
+ h1
+ {
+ 
+  margin:0 auto;
+  color:white;
+  font-weight:normal;
+  font-size:40px;
+  padding-top:5px;
+  margin-left:35px;
+ }
+ #MenuBar2Container
+ {
+ margin:0 auto;
+ background-color:#bb1919;
+ width:100%;
+ height:50px;
+ 
+ }
+ 
+ #MenuBar2
+ { 
+   margin:0 auto;
+   padding-top:20px;
+   padding-left:35px;
+ }
+ 
+ #MenuBar2 a
+ {
+ font-size:18px;
+ color:white;
+ padding-right:5px;
+ padding-left:5px;
+ text-decoration:none;
+ border-right:1px white solid;
+ }
+ 
+ .NoBorder
+ {
+  border-right:none !important;
+ } 
+ 
+ #MenuMoreArrow
+ {
+  width:20px;
+ height:20px;
+ }
+ 
+ #advt a{
+ padding-left:1170px ;
+ color:gray;
+ font-size:15px;
+ text-decoration:none;
+ 
+ }
+ 
+ #advt a:hover{
+
+ text-decoration:underline;
+ text-decoration-color:red;
+ }
+ 
+ #advtBox{
+ margin-left:50px;
+ width:1250px;
+ height:80px;
+ padding-top:10px;
+ padding-bottom:10px;
+ }
+ 
+ #VLine{
+
+ padding-left:4px;
+ margin-right:350px; 
+ float:right;
+ border-top:500px solid gray;
+ }
+
+
+ 
+ #headline
+ {
+margin-bottom:100px;
+padding-left:30px;
+padding-right:20px;
+}
+ #headline a{
+ font-size:35px;
+ color:gray;
+ text-decoration:none;
+ width:40px;
+
+ }
+ 
+ #headline a:hover{
+ color:#80aaff;
+ text-decoration:underline;
+ }
+ 
+ #HeadImg{
+ margin-left:440px;
+ padding-top:50px;
+ }
+ 
+ #headlineImg
+ {
+ width:500px;
+ height:350px;
+ }
 </style>   
 </head>
 
 <body>
 
  <div id="topbar">
-   <img id="logo" src="images/BBC LOGO.png">
+<a href="https://www.bbc.com/news"> <img id="logo" src="images/BBC LOGO.png"> </a>
    
    <div id="signin" class="topbar-section">
      <img id="signIn-img" src="images/admin logo.png">
@@ -113,38 +241,77 @@
    <img id="bell" src="images/bell.png ">
   </div> 
    
-  <div class="topbar-section topbar-menu">
-     Home
+  <div  id="bar" class="topbar-section topbar-menu">
+     <a href="https://www.bbc.com/news">Home</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     News
+  <div id="bar" class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/news">News</a>
    </div>
-  <div class="topbar-section topbar-menu">
-    Sport
+  <div id="bar" class="topbar-section topbar-menu">
+     <a href="https://www.bbc.com/sport">Sport</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     Weather
+  <div id="bar" class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/weather">Weather</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     Shop
+  <div id="bar" class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/shop">Shop</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     Real
+  <div id="bar" class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/real">Real</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     Travel
+  <div id="bar"  class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/travel">Travel</a>
    </div>
-  <div class="topbar-section topbar-menu">
-     Capital
+  <div id="bar"class="topbar-section topbar-menu">
+      <a href="https://www.bbc.com/capital">Capital</a>
    </div>
   <div id="MM" class="topbar-section topbar-menu">
-    More
+     More
 	<img id="more-arrow" src="images/downArrow.png">
    </div>
   <div class="topbar-section">
-    <input id="search-box" type="text" value="Search">
-	<input type="image" id="SImg" src="images/search.png">
+    <input id="search-box" type="text" placeholder="Search">
+	<a href="https://www.bbc.co.uk/search?q="> <input type="image" id="SImg" src="images/search.png"> </a>
    </div>
    </div>
+  <div id="MenuBarContainer">
+  <div id="MenuBar">
+   <h1>NEWS</h1>
+   </div>
+ </div>
+ 
+ <div id="MenuBar2Container">
+  <div id="MenuBar2">
+<a href="">Home</a>  
+<a href="https://www.bbc.com/news/video_and_audio/headlines">Video</a>  
+<a href="https://www.bbc.com/news/world">World</a>  
+<a href="https://www.bbc.com/asia">Asia</a>  
+<a href="https://www.bbc.com/news/uk">UK</a> 
+<a href="https://www.bbc.com/business">Business</a>  
+<a href="https://www.bbc.com/tech">Tech</a>  
+<a href="https://www.bbc.com/science">Science</a>  
+<a href="https://www.bbc.com/stories">Stories</a>  
+<a href="https://www.bbc.com/news/entertainment_and_arts">Entertainment & Arts</a>  
+<a href="https://www.bbc.com/health">Health</a>  
+<a href="https://www.bbc.com/news/world_radio_and_tv">World News TV</a>  
+<a href="https://www.bbc.com/">In Pictures</a>  
+<a href="https://www.bbc.com/">Reality Check</a>  
+<a href="https://www.bbc.com/">Newsbeat</a>  
+<a href="" class="NoBorder">More</a>  
+<img id="MenuMoreArrow" src="images/downArrow.png">
+
+ </div>
+ </div>
+ 
+ <div id="advt">
+ <a href="http://www.bbc.com/usingthebbc/cookies/">ADVERTISEMENT</a>
+ <div id="advtContent">
+    <img id="advtBox" src="images/rec.jpg"><br />
+	<div id="VLine"></div>
+ </div>
+</div><br/>
+
+ 
 </body>
 </html>
+  
